@@ -6,7 +6,7 @@ import pandas as pd
 
 def load_model():
     with open(
-        r"C:\Users\my\Desktop\KMPG Research\Bangalore Falt Prices Regression\regression_model",
+        "../regression_model",
         "rb",
     ) as file:
         model = pickle.load(file)
@@ -14,12 +14,12 @@ def load_model():
 
 
 loc = pd.read_csv(
-    r"C:\Users\my\Desktop\KMPG Research\Bangalore Falt Prices Regression\location.csv"
+    "../location.csv"
 )
 loc = loc["location"].to_numpy()
 
 X = pd.read_csv(
-    r"C:\Users\my\Desktop\KMPG Research\Bangalore Falt Prices Regression\bhp.csv"
+    "../bhp.csv"
 )
 
 data = load_model()
