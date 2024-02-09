@@ -11,7 +11,7 @@ def show_graph_page():
     st.write("Here you can get some graphical and data info regarding our data set\n")
 
     tab = pd.read_csv(
-        r"C:\Users\my\Desktop\KMPG Research\Bangalore Falt Prices Regression\bengaluru_house_prices.csv"
+        "../bengaluru_house_prices.csv"
     )
     st.dataframe(tab)
 
